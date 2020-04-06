@@ -6,15 +6,15 @@
   - analyse the data to extract insights about (no limited to) best performing areas of France, industries...
 
 # Data source
-  The french government publishes 2 CSV files monthly:
-    - one CSV file with legal entities
-    - one CSV file with business locations
+ The french government publishes 2 CSV files monthly:
+  - one CSV file with legal entities
+  - one CSV file with business locations
 
 # Data processing
-  Those CSV files are quite heavy. We will:
-    - copy those files from the government server to an instance on AWS EC2
-    - unzip the files
-    - import the CSV data to a AWS DocumentDB (MongoDB) instance from the EC2 instance
-    - create a Restful API with AWS Endpoint and AWS Lambda
-    - use Python to communicate with MongoDB, format and return the data
-    - use Python to run additional data analysis
+ Those CSV files are quite heavy. We will:
+  - copy those files from the government server to an instance on AWS EC2
+  - unzip the files
+  - import the CSV data to a AWS DocumentDB (MongoDB) instance from the EC2 instance
+  - create a Restful API with AWS Endpoint and AWS Lambda
+  - use Python to communicate with MongoDB, format and return the data
+  - use Python to run additional data analysis
