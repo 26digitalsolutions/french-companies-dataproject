@@ -15,6 +15,6 @@
   - copy those files from the government server to an instance on AWS EC2
   - unzip the files
   - import the CSV data to a AWS DocumentDB (MongoDB) instance from the EC2 instance
-  - create a Restful API with AWS Endpoint and AWS Lambda
+  - create a Restful API with AWS API Gateway and AWS Lambda
   - use Python to communicate with MongoDB, format and return the data
   - use Python to run additional data analysis
