@@ -1,20 +1,20 @@
 # Data project: companies incorporated in France
- A database of all companies incorporated in France, stored in MongoDB with a Restful API built with AWS End Points, AWS Lamba and Python.
+ Turn CSV files containing all companies incorporated in France into a Restful API built with AWS End Points, AWS Lamba and Python. Data will be stored in MongoDB.
 
  The idea is to be able to
-  - easily search companies by name or incorporation number and return results in JSON format.
+  - easily search for companies by name, location or incorporation number and return results in JSON format.
   - analyse the data to extract insights about (no limited to) best performing areas of France, industries...
 
 # Data source
-  The french government published 2 CSV files monthly:
-    - one CSV file with Legal Entities
-    - one CSV file with the business location
+  The french government publishes 2 CSV files monthly:
+    - one CSV file with legal entities
+    - one CSV file with business locations
 
 # Data processing
-  Those CSV files are quite heavy. We will store:
-    - copy the files from the government server to an instance on AWS EC2
+  Those CSV files are quite heavy. We will:
+    - copy those files from the government server to an instance on AWS EC2
     - unzip the files
-    - import the CSV data from the EC2 instance to a AWS DocumentDB instance
+    - import the CSV data to a AWS DocumentDB (MongoDB) instance from the EC2 instance
     - create a Restful API with AWS Endpoint and AWS Lambda
-    - use Python to communicate with MongoDB and return the data
+    - use Python to communicate with MongoDB, format and return the data
     - use Python to run additional data analysis
